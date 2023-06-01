@@ -1,0 +1,91 @@
+/* Fonts do projeto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+/************************************************************* header da tela de login  **************************************************************************************/
+
+.logo{
+    width: 100%;
+    height: 100%;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+.forms{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.forms_text{
+    width: 500px;
+    height: 500px;
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.text_forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12%;
+}
+
+.text_login{
+    font-weight: 1000;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: #4F83B4;
+}
+
+.text_solto{
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #4F83B4;
+}
+
+.login{
+    width: 50%;
+    padding-top: 4%;
+    height: max-content;
+}
+
+.logar{
+    width: 100%;
+    display: flex;
+    height: max-content;
+    padding-top: 8%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.esquecer_senha{
+    font-weight: 100;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: red;
+}
+
+.footer{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.Copyright{
+    font-weight: 100;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 0, 0.644);
+}

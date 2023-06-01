@@ -18,7 +18,7 @@ body{
 }
 
 main{
-    height: 90vh;
+    height: 80vh;
     width:100%;
     padding-top: 10px;
 }
@@ -29,3 +29,6 @@ footer{
     display: flex;
  }
 
+ body{
+    background-image:url(/img/img_login_fundo.png);
+ }
