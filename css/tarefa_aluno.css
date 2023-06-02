@@ -1,0 +1,77 @@
+.conponents_header{
+  
+    background-color: white;
+    height: 8vh;
+    border-bottom: 2px solid #4F83B4 ;
+    display: flex;
+    justify-content: space-between;
+    font-size: 5rem;
+  }
+  .botão_voltar{
+     
+    display: flex;
+    flex-direction: row;
+    color: #4F83B4;
+    align-items: center;
+    gap: 15px;
+  }
+  .foto_nome_turma{
+    
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #4F83B4;
+  }
+  .fotoAluno img{
+    height: 25vh;
+  }
+  .card_info{
+    
+    display: flex;
+    width: 20vw;
+    height: 12vh;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px 10px 10px;
+
+}
+.matriula_desempenho{
+    gap: 100%;
+}
+.botao_verDesempenho button{
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    font-size: medium;
+    font-weight: 500;
+}
+  .boxCard{
+  
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #4F83B4;
+    justify-content: space-evenly;
+  }
+  
+  .titulo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 2px solid #4F83B4;
+    margin: 2%;
+    gap: 15px;
+  }
+  .text_nomeAluno{
+    
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  
+  
+  footer{
+    background-color: #4F83B4;
+    
+  }   
+ 
+  

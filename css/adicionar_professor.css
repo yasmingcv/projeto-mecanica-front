@@ -1,0 +1,109 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.conponents_header{
+    background-color: white;
+    padding: 1%;
+    height: 11.9vh;
+    border-bottom: 2px solid #4F83B4 ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.perfil{
+  font-size: 5rem;
+}
+.conponents_main{
+    height: 100%;
+    width: 100%;
+}
+.box_titulo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 2px solid #4F83B4;
+    margin: 2%;
+    gap: 15px;
+}
+.text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.info_professor{
+    display: flex;
+    margin: 2%;
+    justify-content: center;
+    align-items:center;
+    gap: 50px;
+}
+
+.formulario_professor{
+    width: 100vw;
+}
+
+.nome_professor{
+    
+    margin-bottom: 5%;
+}
+.nome_professor input{
+    
+    width: 50vw;
+    
+}
+.email_Senha{
+    display: flex;
+    flex-direction: row;
+    gap: 206px;
+}
+.salvar_Adicionar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+.text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+ .botao_adicionar{
+    font-size: 2rem;
+    color: #4F83B4;
+    width:3vw;
+    height: 5vh;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    box-shadow: 1px 1px 1px black;
+    z-index: 5;
+    cursor: pointer;
+
+ }
+ .botao_salvar{
+    background-color: #FF0000;
+    color: white;
+    height:5vh;
+    width:6vw;
+    border-radius: 16%;
+    border: none;
+    cursor: pointer;
+ }
+ footer{
+    height: 9vh;
+    background-color: #FF0000;
+    display: flex;
+ }
+ .Copyright{
+    height: 9.1vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    background-color: #4F83B4;
+    color: white;
+    justify-content: center;
+    align-items: center;
+ }

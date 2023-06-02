@@ -1,0 +1,176 @@
+.conponents_header{
+  
+  background-color: white;
+  padding: 1%;
+  height: 8vh;
+  border-bottom: 2px solid #4F83B4 ;
+  display: flex;
+  justify-content: space-between;
+  font-size: 5rem;
+}
+
+.conponents_main{
+  height: 100%;
+  width: 100%;
+}
+.botão_voltar{
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:10px;
+  color: #4F83B4;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+.box_titulo{
+  
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #4F83B4;
+  margin: 2%;
+  gap: 15px;
+}
+.text{
+  
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.formularioTarefa{
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.tituloDuracao{
+  display: flex;
+  justify-content:space-around;
+}
+.tituloTarefa{
+  font-family: 'Montserrat', sans-serif;
+}            
+.tituloTarefa input{
+  width: 45vw;
+}
+.turmaAluno{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1%;
+}
+
+.dropbtnTurma {
+  width: 4vw;
+  cursor: pointer;
+}
+
+/* Deixa o input alinhado com o text de turma */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Controla o container dos dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4F83B4;
+  color: white;
+  width: 6vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: center;
+}
+
+/* Arruma os link dentro do dropdown */
+.dropdown-content a {
+  color: white;
+  border: 1px solid black;
+  padding: 12px 16px;
+  font-weight: 300;
+  text-decoration: none;
+  display: block;
+}
+
+/* Troca a Cor quando colocar o mouse em cima */
+.dropdown-content a:hover {
+  
+  background-color:blue;
+  color: white;
+}
+
+/* deixa dropdown preso no input */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.aluno input{
+  width: 45vw;
+}
+
+.containerDescricao{
+  
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+  padding-top: 1%;
+  padding-left: 8%; 
+}
+
+.containerDescricao input{
+  width: 78vw;
+}
+
+.containerTabela{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 10px;
+  margin-top: 1%;
+}
+table,th,td{
+  border: 2px solid #4F83B4;
+  border-collapse:collapse ;
+  color: black;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.botao_adicionar{
+  font-size: 2rem;
+  color: #4F83B4;
+  width:3vw;
+  height: 5vh;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  box-shadow: 1px 1px 1px black;
+  z-index: 5;
+  cursor: pointer;
+}
+.salvar_professor{
+  text-align: end;
+  padding: 1%;
+}
+.botao_salvar{
+  background-color: #FF0000;
+  color: white;
+  height:5vh;
+  width:6vw;
+  border-radius: 16%;
+  border: none;
+  cursor: pointer;
+}
+footer{
+  height: 19vh;
+  background-color: #FF0000;
+}
+.Copyright{
+  height: 19vh;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  background-color: #4F83B4;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
