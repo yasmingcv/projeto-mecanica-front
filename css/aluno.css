@@ -83,10 +83,13 @@
     height: 50px;
 }
 
+
 .main{
     width: 60%;
-    height:10vh;
+    height:300px;
     display: grid;
+    overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
 .pesquisar{
