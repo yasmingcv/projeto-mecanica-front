@@ -10,20 +10,17 @@ ul, ol, li {
 a {
     text-decoration: none;
     color: inherit;
-    
 }
 
 body{
     height: 100vh;
     width: 100%;
-    background-image:url(/img/img_login_fundo.png);
-    background-size: cover;
 }
 
 main{
-    height: 80vh;
+    height: 90vh;
     width:100%;
-    padding-top: 10px;
+
 }
 
 footer{
@@ -31,3 +28,4 @@ footer{
     width: 100%;
     display: flex;
  }
+

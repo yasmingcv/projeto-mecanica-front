@@ -8,17 +8,16 @@
     <link rel="shortcut icon" href="/img/image 1.png">
     <script src="https: //kit.fontawesome.com/aa7259e7f0.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <meta name="description" content="pagina de genrenciamento de tarefas">
-    <link rel="stylesheet" href="/css/login.css">
-    <link rel="stylesheet" href="/css//resete2.css">
-    <title>Mecanica</title>
+
+    <meta name="description" content="pagina de acesso para o gerenciamento de tarefas">
+    <script src="./js/app.js" defer type="module"></script>    
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/resete.css">
+    <title>Login</title>
 </head>
 
 <body>
@@ -26,14 +25,14 @@
     <header>
 
         <div class="logo">
-            <img src="/img/logo_senai.png" alt="logo senai">
+            <img src="./img/logo_senai.png" alt="logo senai">
         </div>
 
     </header>
 
     <main>
 
-        <div class="forms">
+        <form id="form">
             <div class="forms_text">
 
                 <div class="text_forms">
@@ -45,21 +44,24 @@
 
                 <div class="login">
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="name@example.com">
+                        <label for="exampleFormControlInput1" class="form-label">Digite seu email</label>
+                        
+                        <input type="email" class="form-control" onchange="valideiFields" id="email"placeholder="name@example.com">
                     </div>
-                    <label for="inputPassword5" class="form-label">Password</label>
-                    <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock" placeholder="********************">
+                    
+                    <label for="inputPassword5" class="form-label"> Digite sua senha </label>
+                    
+                    <input type="password" id="senha" class="form-control" aria-labelledby="passwordHelpBlock" placeholder="**********">
+                    
                     <div id="passwordHelpBlock" class="form-text">
                         senha deve ter no máximo 16 caracter e no minimo 8 caracter
                     </div>
                 </div>
 
                 <div class="logar">
-                    <button type="button" class="btn btn-outline-danger">Salvar</button>
+                    <button type="button" id="entrar" onclick="nomeValidacao()" class="btn btn-outline-danger">Entrar</button>
 
-                    <a href="#" class="esquecer_senha"> Primeiro Acesso? </a>
+                    <a href="./teste.html" class="esquecer_senha"> Primeiro Acesso? </a>
                 </div>
 
                 <div class="footer">
@@ -70,12 +72,8 @@
                 </div>
 
             </div>
+        </form>
 
-            
-
-        </div>
-
-        </div>
 
     </main>
 
