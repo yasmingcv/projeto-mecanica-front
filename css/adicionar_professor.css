@@ -34,6 +34,11 @@
     font-weight: 600;
 }
 
+.input_adicionar_professor{
+    width: 400px;
+    height: 30px;
+}
+
 .info_professor{
     display: flex;
     margin: 2%;

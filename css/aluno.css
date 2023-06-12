@@ -88,8 +88,7 @@
     width: 60%;
     height:300px;
     display: grid;
-    overflow-y: auto;
-    scroll-behavior: smooth;
+
 }
 
 .pesquisar{
