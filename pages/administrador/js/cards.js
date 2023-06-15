@@ -307,3 +307,4 @@ class card_curso_aluno extends HTMLElement {
 }
 
 customElements.define('card-curso-aluno', card_curso_aluno)
+

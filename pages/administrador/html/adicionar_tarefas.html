@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina para adicionar tarefas">
+
+
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://kit.fontawesome.com/aa7259e7f0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/icon_page.jpeg" type="image/x-icon">
+
+
+
+    <script src="/page/administrador/js/main.js" defer type="module"></script>
+    <link rel="stylesheet" href="/page/administrador/css/adicionar_tarefa.css">
+    <link rel="stylesheet" href="/page/administrador/css/reset.css">
+    <title>Adicionar Tarefa </title>
+</head>
+<body>
+    <header>
+        <div class="inicio">
+
+            <!-- logo do senai -->
+            <div class="logo">
+                <img src="/img/logo_senai.png" alt="logo senai">
+            </div>
+
+            <div class="bem_vindo">
+
+                <!-- Boas vindas do professor -->
+                <span class="ola_professor">
+                    Olá, Administrador
+                </span>
+
+
+                <!-- imagem de perfil -->
+                <div class="image_perfil">
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+        <div class="titulo_pagina">
+            <h1>Adicionar Tarefa</h1>
+        </div>
+        
+        <div class="container">
+            <button type="button" class="button_adicionarTarefas" id="adicionarTarefas">Adicionar Tarefa</button>
+            <table id="tableClient" class="records">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Criterio</th>
+                        <th colspan="2">resultado</th>
+                        <th colspan="2">Avaliação</th>
+                        <th rowspan="2">Observação</th>
+                    </tr>
+                    <tr>
+                        <th>Desejado</th>
+                        <th>Resultado</th>
+                        <th>A</th>
+                        <th>P</th>
+                    </tr>
+                </thead>
+                <tbody>
+            </table>
+            <div class="modal">
+               <!-- Modal Trigger -->
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+            </div>
+                
+          
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>Copyright 2023 © Todos os direitos reservados Senai Jandira.</p>
+        </div>
+    </footer>
+</body>
+</html>

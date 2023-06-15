@@ -1,0 +1,123 @@
+/*****Haeder***/
+.inicio{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #4F83B4;
+}
+
+.logo{
+    padding: 10px;
+}
+
+.bem_vindo{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    gap: 20px;
+}
+
+.ola_professor{
+    display: flex;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.image_perfil{
+    font-size: 4rem;
+}
+
+/*****Titulo Da pagina & botão de voltar***/
+.botão_voltar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    gap:10px;
+    margin: 1%;
+    color: #4F83B4;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+.box_titulo{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #4F83B4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin: 2%;
+    gap: 15px;
+}
+.box_titulo span{
+    border-bottom:2px solid #4F83B4;
+}
+ 
+.seata_adicionarProfessor{
+    font-size: 3rem;
+}
+
+/*****Main**/
+.componentes_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    height: 75%;
+}
+
+.barra_pesquisa{
+    width: 90%;
+    height: 10vh;
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.barra_pesquisa input{
+    width: 90%;
+    height: 40%;
+    
+}
+
+/*****Cards******/
+.cards_alunos{
+    width: 100%;
+    height: 100%;
+    padding:1%;
+    gap: 19px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+    gap: 20px;
+    width: 200px;
+    height: 100px;
+    background-color:white;
+    border-radius: 10px;
+}
+.text_professores{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.img_professor{
+    height: 7vh;
+    border-radius: 50%;
+}
+
+/*****Footer***/
+footer{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    background-color: #4F83B4;
+    color: white;
+    height: 4vh;
+    justify-content: center;
+    align-items: center;
+
+}

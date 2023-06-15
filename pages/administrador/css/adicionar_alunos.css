@@ -105,13 +105,13 @@ form{
 
 /*****Formulario do professor***/
 .input_form{
-    height: 27vh;
-    width: 30vw;
+    height: 40vh;
+    width: 40vw;
     justify-content: space-between;
     align-items: center;
 }
 
-.input_nome_email_senha{
+.form_container{
     height: 60%;
     width: 60%;
     display: flex;
