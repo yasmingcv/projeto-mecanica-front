@@ -33,6 +33,7 @@ main{
     flex-direction: column;
     align-items: flex-start;
     width: 90%;
+    height: 73vh;
     margin: 5vh auto;
     padding: 50px;
     box-shadow: 2px 2px 10px black;
@@ -67,7 +68,7 @@ main{
 
 .button_adicionarTarefas:hover{
     border: none;
-    background-color: red;
+    background-color: black;
     color: white;
 }
 
@@ -148,7 +149,7 @@ main{
 }
 
 
-
+/*****Botão de fechar a modal*******/
 .modal-close{
     position: absolute;
     right: 0;
@@ -174,6 +175,7 @@ main{
     padding: 0 20px;
 }
 
+/*****Inputs da tela Modal*****/
 .modal-field{
     width: calc(50% - 10px);
     height: 40px;
@@ -185,10 +187,56 @@ main{
 }
 
 .modal-field:focus{
-    border: 2px solid var(--primary-color);
-    box-shadow: 0 0 3px var(--primary-color);
+    border: 2px solid #4F83B4;
+    box-shadow: 0 0 3px black;
 }
 
+
+
+
+/*****Botão*******/
+.button{
+    border-style: none;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.button.blue{
+    background-color: #1FB6FF;
+}
+
+button.green{
+    background-color: #13CE66;
+}
+
+button.red{
+    background-color: #FF4949;
+}
+
+.button:hover{
+    box-shadow: inset 200px 0 0 #00000055;
+}
+
+
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    color: white;
+    background-color: #4F83B4;
+    height: 7vh;
+}
+
+
+
+/*****Responsivo da Modal*******/
 
 .modal-footer{
     background-color: inherit;
@@ -214,34 +262,7 @@ main{
     }
 }
 
-/*****Botão*******/
-.button{
-    border-style: none;
-    height: 40px;
-    padding: 6px 12px;
-    background-color: black;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: box-shadow .6s ease;
-}
-
-.button.blue{
-    background-color: #1FB6FF;
-}
-
-button.green{
-    background-color: #13CE66;
-}
-
-button.red{
-    background-color: #FF4949;
-}
-
-.button:hover{
-    box-shadow: inset 200px 0 0 #00000055;
-}
-
+/*****Responsivo da Modal boãto  editar & excluir*******/
 @media(max-width:480px){
     .button.mobile{
         color:transparent;
@@ -260,16 +281,4 @@ button.red{
         width:100%;
         height:100%;
     }
-}
-
-footer{
-    background-color: #4F83B4;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4vh;
-    width: 100%;
-
 }
