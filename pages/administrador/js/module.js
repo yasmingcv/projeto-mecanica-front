@@ -79,6 +79,7 @@ const salveMateria = () =>{
     }
 }
 
+//Criação das linhas das tabelas 
 const createRow =(materia, index)=>{
     const newRow  = document.createElement('tr')
     newRow.innerHTML= `

@@ -16,7 +16,7 @@
         rel="stylesheet">
     <link rel="shortcut icon" href="/img/icon_page.jpeg" type="image/x-icon">
 
-    <script src="/pages/administrador/js/main.js"></script>
+    <script src="/pages/administrador/js/module_adicionar_professor.js" defer type="module"></script>
     <link rel="stylesheet" href="/pages/administrador/css/visualizar_professor.css">
     <link rel="stylesheet" href="/pages/administrador/css/reset.css">
     <title>Professores</title>
@@ -82,54 +82,12 @@
                         <span class="turma">DS2T</span>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="/img/adicionar_professor.jpg" alt="imagem do professor" class="img_professor">
-
-                    <div class="text_professores">
-                        <span class="name"> João</span>
-                        <span class="turma">DS2T</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/img/adicionar_professor.jpg" alt="imagem do professor" class="img_professor">
-
-                    <div class="text_professores">
-                        <span class="name"> João</span>
-                        <span class="turma">DS2T</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="/img/adicionar_professor.jpg" alt="imagem do professor" class="img_professor">
-
-                    <div class="text_professores">
-                        <span class="name"> João</span>
-                        <span class="turma">DS2T</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/img/adicionar_professor.jpg" alt="imagem do professor" class="img_professor">
-
-                    <div class="text_professores">
-                        <span class="name"> João</span>
-                        <span class="turma">DS2T</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/img/adicionar_professor.jpg" alt="imagem do professor" class="img_professor">
-
-                    <div class="text_professores">
-                        <span class="name"> João</span>
-                        <span class="turma">DS2T</span>
-                    </div>
-                </div>
-            </div>
             <div class="adicionar_professor">
-                <a class="btn-floating btn-large waves-effect waves-light red" id="adicionarMateria">
-                    <i class="material-icons">
+                <button class="btn-floating btn-large waves-effect waves-light red" id="adicionarProfessor">
+                    <i class="material-icons" id="adicionarProfessor">
                         <i class="fa-solid fa-plus" style="color: #3584e4;"></i>
                     </i>
-                </a>
+                </button>
             </div>
             <div class="modal" id="modal">
                 <div class="modal-content">
@@ -138,9 +96,9 @@
                         <span class="modal-close" id="modalClose">&#10006;</span>
                     </header>
                     <form id="form" class="modal-form">
-                        <input type="text" id="professor" data-index="new" class="modal-field" placeholder="Nome do Professor"required>
-                        <input type="text" id="email" class="modal-field" placeholder="E-mail" required>
-                        <input type="text" id="senha" class="modal-field" placeholder="Senha" required>
+                        <input type="text" id="nome_professor" data-index="new" class="modal-field" placeholder="Nome do Professor"required>
+                        <input type="text" id="email_professor" class="modal-field" placeholder="E-mail" required>
+                        <input type="text" id="senha_professor" class="modal-field" placeholder="Senha" required>
                        
                     </form>
                     <footer class="modal-footer">

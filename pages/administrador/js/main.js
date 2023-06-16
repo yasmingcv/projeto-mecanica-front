@@ -10,6 +10,7 @@ import'./bars.js'
 //JavaScript da tela de modal para as tarefas 
 import'./module.js'
 
+import './module_adicionar_professor.js'
 
 //Importe para colocar imagens 
 import './colocar_imagem.js'
