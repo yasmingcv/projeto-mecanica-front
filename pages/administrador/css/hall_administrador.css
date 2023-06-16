@@ -28,6 +28,10 @@
 }
 
 /************** main do professor ***********************/
+main{
+    width: 100%;
+    height: 88vh;
+}
 
 .menu{
     display: flex;
