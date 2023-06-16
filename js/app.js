@@ -1,14 +1,24 @@
 'use strict'
 
 import { autenticarAluno } from "./fetchvalidacao.js"
+import { autenticarAdministrador } from "./fetchvalidacao.js"
+import { autenticarProfessor } from "./fetchvalidacao.js"
 
-const logarAluno = async (dadosAluno) => {
-    let verificarCredenciais = await autenticarAluno(dadosAluno)
+const logarUsuario = async (dados) => {
+    let verificarCredenciaisAluno = await autenticarAluno(dados)
+    let verificarCredenciaisAdministrador = await autenticarAdministrador(dados)
+    let verificarCredenciaisProfessor = await autenticarProfessor(dados)
 
-    if(verificarCredenciais.status == 200) {
+    console.log(verificarCredenciaisAdministrador);
+
+    if(verificarCredenciaisAluno.status == 200) {
         window.location.href = '../pages/aluno/html/hall_aluno.html'
+    } else if (verificarCredenciaisAdministrador.status == 200){
+        window.location.href = '../pages/administrador/html/hall_administrador.html'
+    } else if (verificarCredenciaisProfessor.status == 200) {
+        window.location.href = '../pages/professor/html/hall_professor.html'
     } else {
-        alert('Usuário não autenticado.')
+        alert('Usuário não identificado.')
     }
 
 }
@@ -26,7 +36,7 @@ const enviarEmailSenha = () => {
     aluno.email = email
     aluno.senha = senha
 
-    logarAluno(aluno)
+    logarUsuario(aluno)
 
 }
 
