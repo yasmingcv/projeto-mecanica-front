@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pagina de Vizualização dos professores">
 
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://kit.fontawesome.com/aa7259e7f0.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="/img/icon_page.jpeg" type="image/x-icon">
-    
+
     <script src="/pages/administrador/js/main.js"></script>
     <link rel="stylesheet" href="/pages/administrador/css/visualizar_professor.css">
     <link rel="stylesheet" href="/pages/administrador/css/reset.css">
     <title>Professores</title>
 </head>
+
 <body>
     <header>
         <div class="inicio">
@@ -41,87 +47,113 @@
         </div>
     </header>
     <main>
+
+        <!-- Parte do  voltar para outra tela -->
         <div class="botão_voltar">
             <i class="fa-sharp fa-solid fa-arrow-left"></i>
             <span>Voltar</span>
-            
+
         </div>
-            
+
+        <!-- Parte do titulo da pagina-->
         <div class="box_titulo">
-            
+
             <div class="seata_adicionarProfessor">
                 <i class="fa-solid fa-angles-right" style="color: #cc0000;"></i>
             </div>
-            
+
             <div class="text">
                 <h1>Professores</h1>
             </div>
         </div>
+
+        <!-- Parte dos cards e botão adicionar-->
         <div class="componentes_main">
             <div class="barra_pesquisa">
                 <input type="text" placeholder="Nome do Professor">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <div class="cards_professor">
-                 <div class="card">
+                <div class="card">
                     <img src="/img/adicionar_professor.jpg" alt="imagem do professor" class="img_professor">
 
                     <div class="text_professores">
                         <span class="name"> João</span>
                         <span class="turma">DS2T</span>
                     </div>
-                 </div>
-                 <div class="card">
+                </div>
+                <div class="card">
                     <img src="/img/adicionar_professor.jpg" alt="imagem do professor" class="img_professor">
 
                     <div class="text_professores">
                         <span class="name"> João</span>
                         <span class="turma">DS2T</span>
                     </div>
-                 </div>
-                 <div class="card">
+                </div>
+                <div class="card">
                     <img src="/img/adicionar_professor.jpg" alt="imagem do professor" class="img_professor">
 
                     <div class="text_professores">
                         <span class="name"> João</span>
                         <span class="turma">DS2T</span>
                     </div>
-                 </div>
+                </div>
 
-                 <div class="card">
+                <div class="card">
                     <img src="/img/adicionar_professor.jpg" alt="imagem do professor" class="img_professor">
 
                     <div class="text_professores">
                         <span class="name"> João</span>
                         <span class="turma">DS2T</span>
                     </div>
-                 </div>
-                 <div class="card">
+                </div>
+                <div class="card">
                     <img src="/img/adicionar_professor.jpg" alt="imagem do professor" class="img_professor">
 
                     <div class="text_professores">
                         <span class="name"> João</span>
                         <span class="turma">DS2T</span>
                     </div>
-                 </div>
-                 <div class="card">
+                </div>
+                <div class="card">
                     <img src="/img/adicionar_professor.jpg" alt="imagem do professor" class="img_professor">
 
                     <div class="text_professores">
                         <span class="name"> João</span>
                         <span class="turma">DS2T</span>
                     </div>
-                 </div>         
+                </div>
             </div>
-        </div>
-        <div class="adicionar_professor">
-            <button>
-                <i class="fa-solid fa-plus" style="color: #4f83b4;"></i>
-            </button>
+            <div class="adicionar_professor">
+                <a class="btn-floating btn-large waves-effect waves-light red" id="adicionarMateria">
+                    <i class="material-icons">
+                        <i class="fa-solid fa-plus" style="color: #3584e4;"></i>
+                    </i>
+                </a>
+            </div>
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <h2>Cadastro do Professor</h2>
+                        <span class="modal-close" id="modalClose">&#10006;</span>
+                    </header>
+                    <form id="form" class="modal-form">
+                        <input type="text" id="professor" data-index="new" class="modal-field" placeholder="Nome do Professor"required>
+                        <input type="text" id="email" class="modal-field" placeholder="E-mail" required>
+                        <input type="text" id="senha" class="modal-field" placeholder="Senha" required>
+                       
+                    </form>
+                    <footer class="modal-footer">
+                        <button id="salvar" class="button green">Salvar</button>
+                        <button id="cancelar" class="button blue">Cancelar</button>
+                    </footer>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
         <p>Copyright 2023 © Todos os direitos reservados Senai Jandira.</p>
     </footer>
 </body>
+
 </html>
