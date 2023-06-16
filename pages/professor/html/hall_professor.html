@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/image 1.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https: //kit.fontawesome.com/aa7259e7f0.js" crossorigin="anonymous"></script>
-    <meta name="description" content="pagina de genrenciamento de tarefas">
-    <script src="/js/app.js"></script>
-    <link rel="stylesheet" href="../css/hall.css">
-    <link rel="stylesheet" href="../css/resete.css">
-    <title>Mecanica</title>
+    <meta name="description" content="Pagina de boas vindas do administrador">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/aa7259e7f0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/icon_page.jpeg" type="image/x-icon">
+
+    <script src="/page/administrador/js/main.js" defer type="module"></script>
+    <link rel="stylesheet" href="/pages/administrador/css/hall_administrador.css">
+    <link rel="stylesheet" href="/pages/administrador/css/reset.css">
+    <title>Home</title>
 </head>
-
 <body>
-
     <header>
         <div class="inicio">
 
@@ -31,61 +30,52 @@
 
                 <!-- Boas vindas do professor -->
                 <span class="ola_professor">
-                    Olá,administrador
+                    Olá, Administrador
                 </span>
 
 
-                <!-- imagem professor -->
-                <div class="img_professor">
-                    <img src="/img/Profile user.png" alt="imagem do professor">
+                <!-- imagem de perfil -->
+                <div class="image_perfil">
+                    <i class="fa-solid fa-circle-user"></i>
                 </div>
-
             </div>
-
         </div>
     </header>
-
-    <!-- Fazendo o main da  -->
-    <main id="root">
-
-
+    <main>
         <div class="menu">
 
-            <nav class="navbar bg-body-tertiary fixed-top">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon">
 
-                  </span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+            <!-- Page Content -->
+            <div class="navBars">
+                <button class="w3-button style_navBars w3-xlarge" onclick="w3_open()">☰</button>
+            </div>
 
-                        </button>
-                  </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/pages/administrador/html/adicionar_aluno.html">Aluno</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/pages/administrador/html/mostrar_alunos.html">Turma</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/pages/administrador/html/adicionar_tarefa.html">Adicionar Tarefa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Matérias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/login.html">Sair</a>
-                        </li>
-                    </ul>
+
+            <!-- Sidebar -->
+            <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+                <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+                
+                <div class="links_pages">
+                    <a href="#" class="w3-bar-item w3-button">Close</a>
+                    <a href="./adicionar_alunos.html" class="w3-bar-item w3-button">Alunos</a>
+                    <a href="./adicionar_tarefas.html" class="w3-bar-item w3-button">Tarefas</a>
+                    <a href="/login.html" class="w3-bar-item w3-button">Sair</a>
+                   
+                   
                 </div>
-            </nav>
+             
+            </div>
+
+             <!-- Transformar em uma função num arquivo JS -->
+            <script>
+                function w3_open() {
+                    document.getElementById("mySidebar").style.display = "block";
+                }
+                function w3_close() {
+                    document.getElementById("mySidebar").style.display = "none";
+                }
+            </script>
+
 
             <span class="bem_vindo_professor">
                 Bem Vindo
@@ -98,20 +88,35 @@
             </span>
         </div>
 
-        <div class="apresentar">
-            <div class="add">
-
-                <img src="/img/🦆 icon _Angle Double Right_.png" alt="flecha vermelha">
-
-                <span class="adicionar_professor">
+        <div class="box_titulo">
+            <div class="conteudo_box">
+                <div class="icon_setas">
+                    <i class="fa-solid fa-angles-left" style="color: #cc0000;"></i>
+                </div>    
+                
+                <h1 class="adicionar_professor">
                     Acesso Rápido
-                </span>
+                </h1>
             </div>
         </div>
 
         <div class="cards">
             <div class="cards_matria">
-                <img src="/img/mecanica_img.png" alt="img qualquer" class="img_cards">
+                <img src="/img/adicionar_professor.jpg" alt="img qualquer" class="img_cards">
+                <span class="nome">
+                    Adicionar professor
+                </span>
+                <span class="descricao">
+                    Clique aqui para cadastrar um
+                </span>
+                <span class="descricao">
+                    aluno
+                </span>
+
+            </div>
+
+            <div class="cards_matria">
+                <img src="/img/adicionar_estutande.jpg" alt="img qualquer" class="img_cards">
                 <span class="nome">
                     Adicionar Aluno
                 </span>
@@ -125,23 +130,9 @@
             </div>
 
             <div class="cards_matria">
-                <img src="/img/mecanica_img.png" alt="img qualquer" class="img_cards">
+                <img src="/img/adicionar_materia.jpg" alt="img qualquer" class="img_cards">
                 <span class="nome">
-                    Adicionar Aluno
-                </span>
-                <span class="descricao">
-                    Clique aqui para cadastrar um
-                </span>
-                <span class="descricao">
-                    aluno
-                </span>
-
-            </div>
-
-            <div class="cards_matria">
-                <img src="/img/mecanica_img.png" alt="img qualquer" class="img_cards">
-                <span class="nome">
-                    Adicionar Aluno
+                    Adicionar Materia
                 </span>
                 <span class="descricao">
                     Clique aqui para cadastrar um
@@ -152,24 +143,11 @@
             </div>
         </div>
 
-        <div class="button">
-            <div class="adicionar">
-                <img src="/img/add.png" alt="add">
-            </div>
-        </div>
+        
 
     </main>
-
     <footer>
-        <div class="salvar_Adicionar">
-        </div>
-            <div class="Copyright">
-                <p>Copyright 2023 © Todos os direitos reservados Senai Jandira.</p>
-            </div>
-            
+        <p>Copyright 2023 © Todos os direitos reservados Senai Jandira.</p>
     </footer>
-
-
 </body>
-
 </html>

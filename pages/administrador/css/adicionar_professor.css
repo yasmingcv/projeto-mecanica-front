@@ -38,7 +38,6 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
-    
     gap:10px;
     margin: 1%;
     color: #4F83B4;
@@ -186,7 +185,7 @@ footer{
     display: flex;
     background-color: #4F83B4;
     color: white;
-    height: 4vh;
+    height: 3vh;
     justify-content: center;
     align-items: center;
 

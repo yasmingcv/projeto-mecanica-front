@@ -28,6 +28,11 @@
     font-size: 4rem;
 }
 
+main{
+    width: 100%;
+    height: 60vh;
+}
+
 /*****Titulo Da pagina & botão de voltar***/
 .botão_voltar{
     display: flex;
@@ -81,7 +86,7 @@
 }
 
 /*****Cards******/
-.cards_alunos{
+.cards_professor{
     width: 100%;
     height: 100%;
     padding:1%;
@@ -110,13 +115,35 @@
     border-radius: 50%;
 }
 
+
+/*****Botão Adicionar Professor******/
+.adicionar_professor{
+    width: 100%;
+    display: flex;
+    background-color: blueviolet;
+    justify-content: end;
+    align-items: center;
+}
+.adicionar_professor button{
+    width: 5vw;
+    height: 4vh;
+    border-radius: 100%;
+}
+
+
+
+
+
+
+
+
 /*****Footer***/
 footer{
     font-family: 'Poppins', sans-serif;
     display: flex;
     background-color: #4F83B4;
     color: white;
-    height: 4vh;
+    height: 3vh;
     justify-content: center;
     align-items: center;
 
