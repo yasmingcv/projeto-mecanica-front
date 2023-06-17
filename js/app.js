@@ -23,11 +23,6 @@ const logarUsuario = async (dados) => {
 
 }
 
-// const aluno = {
-//     "email": "jainacinho@gmail.com",
-//     "senha": "senhaforte"
-// }
-
 const enviarEmailSenha = () => {
     const email = document.getElementById('email').value
     const senha = document.getElementById('senha').value
