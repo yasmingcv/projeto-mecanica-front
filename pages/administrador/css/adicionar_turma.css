@@ -1,0 +1,283 @@
+/*****Header***/
+.inicio{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #4F83B4;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 1%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fa-circle-user{
+    font-size: 3rem;
+}
+
+.logo{
+    padding: 10px;
+}
+
+
+/*****Main***/
+
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    height: 73vh;
+    margin: 5vh auto;
+    padding: 50px;
+    box-shadow: 2px 2px 10px black;
+    gap: 20px;
+}
+.titulo_pagina{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    color: black;
+}
+.fa-angles-right{
+    font-size: 5rem;
+}
+.container{
+    height: 60vh;
+    width: 60vw;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+
+/*****Botão Adicionar tarefas ***/
+.button_adicionarTarefas{
+    border: 1px solid black;
+    background-color: #4F83B4;
+    color: white;
+    height: 5vh;
+    width: 8vw;
+    margin: 1%;
+}
+
+.button_adicionarTarefas:hover{
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+
+/*****Tabela das materias ***/
+.records{
+    width: 100%;
+    user-select: none;
+    text-align: left;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.records th{
+    height: 50px;
+    background-color: #4F83B4;
+    padding-left: 20px;
+    font-size: 1.2rem;    
+}
+.records td{
+    height: 60px;
+    padding-left: 20px;
+    background-color: #D2CECE;
+}
+
+.records th:last-child,
+.records td:last-child{
+    padding: 0;
+    min-width: 140px;
+    text-align: center;
+}
+
+
+
+/*****Modal*******/
+
+.modal{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00000090;
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 50vw;
+    margin: 15vh auto;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 10px black;
+}
+
+.modal-header{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1rem;
+}
+
+
+/*****Botão de fechar a modal*******/
+.modal-close{
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    background-color: #FF4949;
+}
+
+.modal-close:hover{
+    
+    color: black;
+}
+
+.modal-form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/*****Inputs da tela Modal*****/
+.modal-field{
+    width: calc(50% - 10px);
+    height: 40px;
+    outline-style: none;
+    border-style: none;
+    box-shadow: 0 0 2px black;
+    padding: 0 10px;
+    font-size:1rem;
+}
+
+.modal-field:focus{
+    border: 2px solid #4F83B4;
+    box-shadow: 0 0 3px black;
+}
+
+
+
+
+/*****Botão*******/
+.button{
+    border-style: none;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.button.blue{
+    background-color: #1FB6FF;
+}
+
+button.green{
+    background-color: #13CE66;
+}
+
+button.red{
+    background-color: #FF4949;
+}
+
+.button:hover{
+    box-shadow: inset 200px 0 0 #00000055;
+}
+
+
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    color: white;
+    background-color: #4F83B4;
+    height: 7vh;
+}
+
+
+
+/*****Responsivo da Modal*******/
+
+.modal-footer{
+    background-color: inherit;
+    text-align: right;
+    padding: 0 20px;
+}
+
+@media (max-width:480px){
+    .modal{
+        top:100%;
+        transition: all 1s ease;
+    }
+    .modal.active{
+        top:0;
+    }
+    .modal-content{
+        margin:0;
+        width:100%;
+        position:fixed;
+    }
+    .modal-field{
+        width:100%;
+    }
+}
+
+/*****Responsivo da Modal boãto  editar & excluir*******/
+@media(max-width:480px){
+    .button.mobile{
+        color:transparent;
+        font-size:0;
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+        position:fixed;
+        top: 90vh;
+        left: 80vw;
+    }
+    .button.mobile::before{
+        content: "+";
+        color:black;
+        font-size:2rem;
+        width:100%;
+        height:100%;
+    }
+}

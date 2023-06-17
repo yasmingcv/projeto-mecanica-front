@@ -1,0 +1,126 @@
+.inicio{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #4F83B4;
+}
+
+.logo{
+    padding: 10px;
+}
+
+.bem_vindo{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    gap: 20px;
+}
+
+.ola_professor{
+    display: flex;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.image_perfil{
+    font-size: 4rem;
+}
+
+/***** Main*******/
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.titulo_pagina{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #4F83B4;
+}
+.container{
+
+    height: 60vh;
+    width: 60vw;
+    box-shadow: 1px 1px 1px 1px black;
+  
+
+}
+/*****Botão Adicionar tarefas ***/
+.button_adicionarTarefas{
+    border: 1px solid black;
+    background-color: #4F83B4;
+    color: white;
+    height: 5vh;
+    width: 8vw;
+    margin: 1%;
+}
+
+.button_adicionarTarefas:hover{
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+
+/*****Tabela ***/
+
+.records{
+    width: 100%;
+    user-select: none;
+    text-align: left;
+    
+}
+
+.records th{
+    height: 50px;
+    background-color: #4F83B4;
+    padding-left: 20px;
+    font-size: 1.2rem;    
+}
+.records td{
+    height: 50px;
+    padding-left: 20px;
+}
+
+.records th:last-child,
+.records td:last-child{
+    padding: 0;
+    min-width: 140px;
+    text-align: center;
+}
+
+.records tr:hover{
+    background-color: var(--secundary-color);
+}
+
+/*****Tela de modal***/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    background-color: #4F83B4;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina de boas vindas do administrador">
+    
+    
+    <script src="https://kit.fontawesome.com/aa7259e7f0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/icon_pages.jpeg" type="image/x-icon">
+
+    <script src="/pages/administrador/js/module_criar_cursos.js" defer type="module"></script>
+    <link rel="stylesheet" href="/pages/administrador/css/reset.css">
+    <link rel="stylesheet" href="/pages/administrador/css/criar_cursos.css">
+    <title>Adicionar Cursos</title>
+</head>
+<body>
+    <header>
+        <div class="inicio">
+            <div class="logo">
+                <img src="/img/logo_senai.png" alt="logo do header">
+            </div>
+
+            <div class="perfil">
+                <span>
+                    Olá,administrador
+                </span>
+                <i class="fa-solid fa-circle-user"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="titulo_pagina">
+
+            <div class="seata_adicionarProfessor">
+                <i class="fa-solid fa-angles-right" style="color: #cc0000;"></i>
+            </div>
+
+            <h1>Adicionar Curso</h1>
+        </div>
+        
+       
+            <button type="button" class="button_adicionarTarefas" id="adicionarMateria">Adicionar Materia</button>
+            <table id="tableClient" class="records">
+                <thead>
+                    <tr>
+                        <th>Nome da Cuso</th>
+                        <th>Descrição</th>
+                        <th>Professor</th>
+                        <th>Carga Horaria</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                
+                </tbody>   
+            </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Cadastro de Curso</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="Nome_do_Curso" data-index="new" class="modal-field" placeholder="Nome da Materia"required>
+                    <input type="text" id="Descrição" class="modal-field" placeholder="Curso" required>  
+                    <input type="text" id="Professor" class="modal-field" placeholder="Descrição" required>  
+                    <input type="text" id="Carga_Horaria" class="modal-field" placeholder="Descrição" required>  
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    
+        <footer>
+
+            <p>Copyright 2023 © Todos os direitos reservados Senai Jandira.</p>
+            
+        </footer>
+    
+</body>
+</html>
