@@ -30,8 +30,6 @@ const inserirProfessor = async () => {
   } else {
     alert('Ocorreu um erro.')
   }
-  
-
 }
 
 const criaCard = (professor) => {

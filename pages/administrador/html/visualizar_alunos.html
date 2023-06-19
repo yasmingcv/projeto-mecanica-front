@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,8 @@
     <script src="https://kit.fontawesome.com/aa7259e7f0.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="/img/icon_page.jpeg" type="image/x-icon">
 
     <script src="/pages/administrador/js/module_adicionar_aluno.js" defer type="module"></script>
@@ -21,6 +23,7 @@
 
     <title>Alunos</title>
 </head>
+
 <body>
     <header>
         <div class="inicio">
@@ -73,18 +76,22 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <div class="cards_aluno">
-                <div class="card">
+
+                <!-- <div class="card">
                     <img src="/img/adicionar_professor.jpg" alt="imagem do  Aluno" class="img_aluno">
 
                     <div class="text_aluno">
                         <span class="name"> João</span>
                         <span class="turma">DS2T</span>
                     </div>
-                </div>
+                </div> -->
+
+                
+            </div>
             <div class="adicionar_aluno">
-                <button class="btn-floating btn-large waves-effect waves-light red" id="adicionarAluno">
-                    <i class="material-icons" id="adicionarAluno">
-                        <i class="fa-solid fa-plus" style="color: #3584e4;"></i>
+                <button class="btn-floating btn-large waves-effect waves-light red" id="adicionarProfessor">
+                    <i class="material-icons" id="adicionarProfessor">
+                        <i class="fa-solid fa-plus" style="color: #fff;"></i>
                     </i>
                 </button>
             </div>
@@ -95,10 +102,11 @@
                         <span class="modal-close" id="modalClose">&#10006;</span>
                     </header>
                     <form id="form" class="modal-form">
-                        <input type="text" id="nome_aluno" data-index="new" class="modal-field" placeholder="Nome do Aluno"required>
-                        <input type="text" id="email_Aluno" class="modal-field" placeholder="E-mail" required>
-                        <input type="text" id="senha_Aluno" class="modal-field" placeholder="Senha" required>
-                       
+                        <input type="text" id="nome_aluno" data-index="new" class="modal-field"
+                            placeholder="Nome do Aluno" required>
+                        <input type="text" id="email_aluno" class="modal-field" placeholder="E-mail" required>
+                        <input type="text" id="senha_aluno" class="modal-field" placeholder="Senha" required>
+
                     </form>
                     <footer class="modal-footer">
                         <button id="salvar" class="button green">Salvar</button>
@@ -106,10 +114,10 @@
                     </footer>
                 </div>
             </div>
-        </div>
     </main>
     <footer>
         <p>Copyright 2023 © Todos os direitos reservados Senai Jandira.</p>
     </footer>
 </body>
+
 </html>

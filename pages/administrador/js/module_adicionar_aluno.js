@@ -1,86 +1,82 @@
 'use strict'
 
+import { insertAluno } from "./fetchs.js"
+import { getAlunos } from "./fetchs.js"
+
+const alunos = await getAlunos()
+
+
 const openModal = () => document.getElementById('modal')
     .classList.add('active')
 const closeModal = () => {
     document.getElementById('modal').classList.remove('active')
 }
 
+const inserirAluno = async () => {
+    const nome = document.getElementById('nome_aluno').value
+    const email = document.getElementById('email_aluno').value
+    const senha = document.getElementById('senha_aluno').value
 
+    const alunoJSON = {
+        "nome": nome,
+        "email": email,
+        "senha": senha
+    }
 
-//Get & Set  LocalStorage 
-// const getLocalStorage = () => JSON.parse(localStorage.getItem('db_aluno'))?? []
-// const setLocalStorage = (dbAluno) => localStorage.setItem("db_aluno",JSON.stringify(dbMateria))
-    
+    const fetch = await insertAluno(alunoJSON)
 
-// const deletarAluno = (index) =>{
-//     const dbAluno = readAluno()
-//     dbAluno.splice(index,1)
-//     setLocalStorage(dbAluno)
-// }
+    if (fetch.status == 201) {
+        closeModal()
+    } else {
+        alert('Ocorreu um erro.')
+    }
+}
 
-// const UpdateAluno = (index, aluno) =>{
-//     const dbAluno = readAluno()
-//     dbAluno[index] = aluno
-//     setLocalStorage(dbAluno)
-// }
+const criaCard = (aluno) => {
+    const img = document.createElement('img')
+    img.src = '../../../img/adicionar_professor.jpg'
+    img.classList.add('img_aluno')
 
-// const readAluno = () => getLocalStorage()
+    const texts = document.createElement('div')
+    texts.classList.add('text_aluno')
 
-// //CRUD -CREATE
-// const createAluno= (aluno) =>{
-//     const dbAluno = getLocalStorage()
-//     dbAluno.push(aluno)
-//     setLocalStorage(aluno)
-// }
+    const nome = document.createElement('span')
+    nome.classList.add('name')
+    nome.textContent = aluno.nome
 
-// const isValidFields = () => {
-//     return document.getElementById('form').reportValidity()
-// }
-// //Interção com o layout
+    const email = document.createElement('span')
+    email.classList.add('turma')
+    email.textContent = aluno.matricula
 
-// //Para limpar os campos
-// const clearFields =()=>{
-//     const filds = document.querySelectorAll('.modal-field')
-//     filds.forEach(fild => fild.value= "")
-// }
+    const card = document.createElement('div')
+    card.classList.add('card')
 
-// //BOTÃO SALVAR
-// const salveMateria = () =>{
-//     if (isValidFields()) {
-//         const aluno = {
-//             materia: document.getElementById('nome_aluno').value,
-//             descrição: document.getElementById('email_aluno').value,
-//             professor: document.getElementById('senha_aluno').value,
+    texts.append(nome, email)
+    card.append(img, texts)
 
-//         }
-//         const index = document.getElementById('aluno').dataset.index
-//         if (index == 'new') {
-//             createAluno(aluno)
-//             updateTable()
-//             closeModal()    
-//         }else{
-//             UpdateAluno(index,materia)
-//             updateTable()
-//             closeModal()
-//         }
-        
-//     }
-// }
+    return card
 
-// //Criação das tebelas
-// const createCard =(aluno, index)=>{
-//     const newCard = document.createElement('car')
-//     newCard.innerHTML = `
-    
-//     `
-// }
+}
+
+const carregarAlunos = async () => {
+    const container = document.querySelector('.cards_aluno')
+
+    const cards_alunos = alunos.alunos.map(criaCard)
+
+    container.replaceChildren(...cards_alunos)
+}
+
+carregarAlunos()
+
 //Eventos
 document.getElementById('adicionarAluno')
-    .addEventListener('click',openModal)
+    .addEventListener('click', openModal)
 
 
 document.getElementById('modalClose')
-    .addEventListener('click',closeModal)
+    .addEventListener('click', closeModal)
+
+document.getElementById('salvar')
+    .addEventListener('click', inserirAluno)
 
 
