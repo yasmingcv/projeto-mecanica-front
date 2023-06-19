@@ -144,6 +144,7 @@ main{
     background: transparent;
     opacity: 0;
     z-index: -1;
+    overflow: hidden;
 }
 
 .modal.active{
@@ -193,7 +194,6 @@ main{
 }
 
 .modal-close:hover{
-    
     color: black;
 }
 

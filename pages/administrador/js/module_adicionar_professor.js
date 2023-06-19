@@ -1,8 +1,14 @@
 import { insertProfessor } from "./fetchs.js"
 import { getProfessores } from "./fetchs.js"
 
+const professores = await getProfessores()
+
+
 const openModal = () => document.getElementById('modal').classList.add('active')
-const closeModal = () => document.getElementById('modal').classList.remove('active')
+const closeModal = () => {
+  document.getElementById('modal').classList.remove('active')
+  carregarProfessores
+}
 
 const inserirProfessor = async () => {
   const nome = document.getElementById('nome_professor').value
@@ -15,18 +21,43 @@ const inserirProfessor = async () => {
     "senha": senha
   }
 
-  await insertProfessor(professorJSON)
+  const fetch = await insertProfessor(professorJSON)
   criaCard(nome) // Chama a função criaCard passando o nome do professor
+
+  if(fetch.status == 201){
+    closeModal()
+    carregarProfessores
+  } else {
+    alert('Ocorreu um erro.')
+  }
+  
+
 }
 
-const criaCard = (nome) => {
+const criaCard = (professor) => {
   const card = document.createElement('div')
   card.classList.add('card')
-  card.textContent = nome
 
-  const cardContainer = document.getElementById('cardContainer')
-  cardContainer.appendChild(card)
+  const nome = document.createElement('h1')
+  nome.textContent = professor.nome
+
+  card.append(nome)
+
+  return card
+
 }
+
+const carregarProfessores = async () => {
+  const container = document.getElementById('cards_professor')
+
+  const profs = professores.professores.map(criaCard)
+
+  container.replaceChildren(...profs)
+}
+
+
+carregarProfessores()
+
 
 // Eventos
 document.getElementById('adicionarProfessor').addEventListener('click', openModal)
