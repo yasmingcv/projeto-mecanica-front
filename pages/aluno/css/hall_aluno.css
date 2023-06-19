@@ -1,0 +1,199 @@
+.inicio{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #4F83B4;   
+     background-color: #fff;
+}
+.body{
+    height: 100vh;
+}
+.logo{
+    padding: 10px;
+}
+
+.bem_vindo{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    gap: 20px;
+}
+
+.ola_professor{
+    display: flex;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.image_perfil{
+    font-size: 2.5rem;
+}
+
+
+/************** main do professor ***********************/
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: 100%;
+    background-image: url(/img/main_fixo.png);
+    background-repeat:no-repeat;
+    background-size: 100vw;
+    
+}
+
+.bem_vindo_professor{
+    font-size: 4rem;
+    padding-left: 8%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cursos{
+    font-weight: 10;
+    font-size: 2rem;
+    font-style: italic;
+    padding-left: 8% ;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mecanica{
+    font-weight: 1000;
+    font-size: 4rem;
+    padding-left: 8%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+/************************* cards ****************************/
+
+.box_titulo{
+    display: flex;
+    gap: 12px;
+    align-content: center;
+    justify-content: center;
+}
+
+.links_pages{
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+
+.acesso_rapido-title{
+    font-weight: 600;
+    font-size: 1.7rem;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.icon_setas{
+    font-size: 2.5rem;
+}
+
+.conteudo_box{
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+    border-bottom: 2px solid #4F83B4;
+    align-items: center;
+}
+
+.cards{
+    padding-top: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.cards_matria{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 320px;
+    border-radius: 20px ;
+    border: 1px solid  #4F83B4;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+}
+
+.img_cards{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.nome{
+    font-weight: 1000;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    color:#4F83B4;
+    padding: 5px;
+    text-align: center;
+}
+
+.descricao{
+    font-weight: 100;
+    font-size: .9rem;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+
+
+/************************************ Footer **********************************/
+.button{
+    width: 100%;
+    height: 19vh;
+    display: flex;
+    justify-content: end;
+    padding-top: 5%;
+}
+
+.adicionar{
+    width: 80px;
+    height: 70px;
+    display: flex;
+}
+
+footer{
+    height: 10rem;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: end;
+ }
+ .card_footer{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    background-color: #4F83B4;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    font-size: .9rem;
+ }
+/********************************* MAIN *****************************************/
+
+main{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+

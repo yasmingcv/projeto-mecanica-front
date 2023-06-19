@@ -1,11 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Pagina de boas vindas do administrador">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/aa7259e7f0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href=".">
+    <link rel="stylesheet" href="../css/hall_aluno.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>Home</title>
 </head>
+
 <body>
-    <p>oi</p>
+    <header>
+        <div class="inicio">
+
+            <!-- logo do senai -->
+            <div class="logo">
+                <img src="/img/logo_senai.png" alt="logo senai">
+            </div>
+
+            <div class="bem_vindo">
+
+                <!-- Boas vindas do professor -->
+                <span class="ola_professor">
+                    Olá, Aluno(a)
+                </span>
+
+
+                <!-- imagem de perfil -->
+                <div class="image_perfil">
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="menu">
+
+
+           
+            <div class="navBars">
+                <button class="w3-button style_navBars w3-xlarge" onclick="w3_open()">☰</button>
+            </div>
+
+
+        
+            <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+                <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+
+                <div class="links_pages">
+                    <a href="./mostrar_tarefas_aluno.html" class="w3-bar-item w3-button">Tarefas</a>
+                    <a href="./unidade-curricular_aluno.html" class="w3-bar-item w3-button">Unidade Curricular</a>
+                    <a href="./cursos_aluno.html" class="w3-bar-item w3-button">Cursos</a>
+                    <a href="/login.html" class="w3-bar-item w3-button">Sair</a>
+
+
+                </div>
+
+            </div>
+
+            <!-- Transformar em uma função num arquivo JS -->
+            <script>
+                function w3_open() {
+                    document.getElementById("mySidebar").style.display = "block";
+                }
+                function w3_close() {
+                    document.getElementById("mySidebar").style.display = "none";
+                }
+            </script>
+
+
+            <span class="bem_vindo_professor">
+                Bem Vindo
+            </span>
+            <span class="cursos">
+                ao Gerenciamento de Tarefas do Curso Técnico em
+            </span>
+            <span class="mecanica">
+                Mecânica
+            </span>
+        </div>
+
+        <div class="box_titulo">
+            <div class="conteudo_box">
+                <div class="icon_setas">
+                    <i class="fa-solid fa-angles-left" style="color: #cc0000;"></i>
+                </div>
+
+                <h1 class="acesso_rapido-title">
+                    Acesso Rápido
+                </h1>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="cards_matria">
+                <img src="../imgs/img_ver-tarefas.png" alt="img qualquer" class="img_cards">
+                <div class="card-text">
+                    <span class="nome">
+                        Ver Tarefas
+                    </span>
+                    <span class="descricao">
+                        Clique aqui para ver suas tarefas disponíveis.
+                    </span>
+                </div>
+
+
+            </div>
+
+            <div class="cards_matria">
+                <img src="../imgs/ver_cursos-alun.png" alt="img qualquer" class="img_cards">
+
+                <div class="card-text">
+                    <span class="nome">
+                        Ver Cursos
+                    </span>
+                    <span class="descricao">
+                        Clique aqui para visualizar seus cursos.
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="cards_matria">
+                <img src="../imgs/ver_unidade-curricular-aluno.png" alt="img qualquer" class="img_cards">
+                <div class="card-text">
+                    <span class="nome">
+                        Ver Unidades Curriculares
+                    </span>
+                    <span class="descricao">
+                        Clique aqui para ver tarefas pendentes de uma Unidade Curricular.
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </main>
+    <footer>
+        <div class="card_footer">
+            <p>Copyright 2023 © Todos os direitos reservados Senai Jandira.</p>
+        </div>
+
+    </footer>
 </body>
+
 </html>
